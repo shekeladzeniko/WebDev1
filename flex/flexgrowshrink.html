@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item{
+            background-color: aqua;
+            height: 400px;
+            flex-basis: auto;
+            flex-grow: 1;
+            transition: 0.15s;
+            flex-shrink: 1;
+        }
+
+        .item:hover{
+            flex-grow: 2;
+        }
+
+        .item2:hover{
+            flex-grow: 2;
+        }
+
+        .item2{
+            background-color: aqua;
+            height: 400px;
+            flex-basis: 50px;
+            flex-shrink: 1;
+            transition: 0.15s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item2"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>

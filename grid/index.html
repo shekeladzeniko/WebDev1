@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1.5fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+      }
+
+      .item {
+        font-size: 5rem;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .laptop {
+        background-color: #007bff;
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+      }
+      .calendar {
+        background-color: #28a745;
+        z-index: 2;
+      }
+      .book {
+        background-color: #dc3545;
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="item laptop">💻
+</div>
+      <div class="item calendar">🗓️
+</div>
+      <div class="item book">📖
+</div>
+    </div>
+  </body>
+</html>

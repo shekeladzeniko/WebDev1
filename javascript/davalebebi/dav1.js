@@ -25,7 +25,7 @@ const products = [
   }
 ];
 
-function precent(price, discount) {
+function percent(price, discount) {
     let discountamount = price * (discount / 100);
     let finalprice = price - discountamount;
     return finalprice;
@@ -33,7 +33,7 @@ function precent(price, discount) {
 
 for(let i = 0; i < products.length; i++){
       if(products[i].inStock === true ){
-           console.log(precent(products[i].price, products[i].discount));
+           console.log(percent(products[i].price, products[i].discount));
       } else {
             console.log("product is not available");
       }

@@ -1,11 +1,11 @@
 function getsashualo(event) {
   event.preventDefault();
 
- const forelements = document.querySelector("form").elements;
+ const formlements = document.querySelector("form").elements;
 
-      const name = forelements.name.value;
-      const mathScore = forelements.math.value;
-      const englishScore = forelements.english.value;
+      const name = formlements.name.value;
+      const mathScore = formlements.math.value;
+      const englishScore = formlements.english.value;
 
   const average = (mathScore + englishScore) / 2;
   

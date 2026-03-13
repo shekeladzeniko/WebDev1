@@ -1,82 +1,174 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>webstore</title>
     <style>
-        *{
-            margin: 0%;
-            padding: 0%;
-        }
-        .navbar{
-            display:flex;
-            background-color: dodgerblue;
-            width: 100%;
-            justify-content: space-between;
-            padding: 10px;
-            color: aliceblue;
-            align-items: center;
-            font-family: sans-serif;
+      * {
+        margin: 0%;
+        padding: 0%;
+      }
+      .navbar {
+        display: flex;
+        background-color: dodgerblue;
+        width: 100%;
+        justify-content: space-between;
+        padding: 10px;
+        color: aliceblue;
+        align-items: center;
+        font-family: sans-serif;
+      }
 
-        }
-
-        .main{
-            font-family: sans-serif;
-            display: flex;
-            padding: 10px;
-            margin: 10px;
-            display: grid;
-            grid-template-columns: auto auto;
-            gap: 30px;
-
-        }
-        .image{
-            border: 1px solid gray;
-            border-radius: 15px;
-            padding: 20px;
-            display: grid;
-        }
-
+      .main {
+        font-family: sans-serif;
+        display: flex;
+        padding: 10px;
+        margin: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        align-items: center;
+      }
+      .image {
+        border: 1px solid gray;
+        border-radius: 15px;
+        padding: 20px;
+        width: fit-content;
+        justify-self: center;
+      }
     </style>
-
-</head>
-<body>
+  </head>
+  <body>
     <div class="navbar">
-        <div style="display: flex; flex-direction: column; gap: 3px; align-items: center; padding-left: 40px;">
-            <h3 style=" width: 100%; text-align: center; border-radius: 15px; border: 1px 1px solid white; padding: 4px; background-color: aliceblue; color: dodgerblue;">SHOP</h3>
-            <h5>MINIMAL STORE</h5>
-        </div>
-        <div style="display: flex; gap: 20px;">
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          gap: 3px;
+          align-items: center;
+          padding-left: 100px;
+        "
+      >
+        <h3
+          style="
+            width: 100%;
+            text-align: center;
+            border-radius: 15px;
+            border: 1px 1px solid white;
+            padding: 4px;
+            background-color: aliceblue;
+            color: dodgerblue;
+          "
+        >
+          SHOP
+        </h3>
+        <h5>MINIMAL STORE</h5>
+      </div>
+      <div style="display: flex; gap: 20px">
         <h4>Home</h4>
         <h4>Shop</h4>
         <h4>About</h4>
         <h4>Contact</h4>
-        </div>
-        
-        <div style="display: flex; gap: 5px; padding-right: 40px;">
-        <p style="border: 1px solid aliceblue; background-color: aliceblue; border-radius: 10px;">🔍</p> 
-        <p style="border: 1px solid aliceblue; background-color: aliceblue; border-radius: 10px;">🛒</p>
-        </div>
+      </div>
 
+      <div style="display: flex; gap: 5px; padding-right: 100px">
+        <button
+          style="
+            border: 1px solid aliceblue;
+            background-color: aliceblue;
+            border-radius: 15px;
+            font-size: 25px;
+            margin-right: 10px;
+          "
+        >
+          🔍
+        </button>
+        <button
+          style="
+            border: 1px solid aliceblue;
+            background-color: aliceblue;
+            border-radius: 15px;
+            font-size: 25px;
+          "
+        >
+          🛒
+        </button>
+      </div>
     </div>
 
     <div class="main">
-        <div style="display: flex; flex-direction: column; gap: 10px;">
-            <h3 style="color: deepskyblue; border: 2px solid deepskyblue; border-radius: 15px; padding: 5px; width: 15%;">NEW COLLECTION</h3>
-            <h1>Everyday essentials, thoughtfully designed</h1> 
-            <p>A simple clean layout for your future e-commerce store. Products are static for now, but the design is ready for real data later</p>
-            <p style="background-color: dodgerblue; border: 1px solid dodgerblue; border-radius: 15px; padding: 5px; text-align: center; color: aliceblue;">Browse Products</p>
-            <p style="background-color: dodgerblue; border: 1px solid dodgerblue; border-radius: 15px; padding: 5px; text-align: center; color: aliceblue;">Learn More</p>
-        
+      <div style="display: flex; flex-direction: column; gap: 25px; justify-self: center">
+        <h3
+          style="
+            color: deepskyblue;
+            border: 2px solid deepskyblue;
+            border-radius: 15px;
+            padding: 10px;
+            align-self: flex-start;
+          "
+        >
+          NEW COLLECTION
+        </h3>
+        <h1 style="font-size: 50px">
+          Everyday essentials, thoughtfully designed
+        </h1>
+        <p style="font-size: 20px; color: gray">
+          A simple clean layout for your future e-commerce store. Products are
+          static for now, but the design is ready for real data later
+        </p>
+        <div style="display: flex; gap: 10px; margin-top: 20px">
+          <p
+            style="
+              background-color: dodgerblue;
+              border: 1px solid dodgerblue;
+              border-radius: 15px;
+              padding: 10px;
+              text-align: center;
+              color: aliceblue;
+              font-size: 20px;
+            "
+          >
+            Browse Products
+          </p>
+          <p
+            style="
+              background-color: dodgerblue;
+              border: 1px solid dodgerblue;
+              border-radius: 15px;
+              padding: 10px;
+              text-align: center;
+              color: aliceblue;
+              font-size: 20px;
+            "
+          >
+            Learn More
+          </p>
         </div>
+      </div>
 
-            <div class="image">
-                <img src="https://i5.walmartimages.com/seo/onn-50-Class-4K-UHD-2160P-LED-Roku-Smart-Television-HDR-100012585_172c1aa5-8186-46a0-a036-7d037b18fec4.2dc5ae54b0065effaf09a9dc06a578a6.jpeg"
-                 style="width:400px; height: 350px; border: 1px solid gray; border-radius: 15px; " >
-                 <p>Onn Smart TV</p>
-                 <p>$499</p>
+      <div class="image">
+        <img
+          src="https://i5.walmartimages.com/seo/onn-50-Class-4K-UHD-2160P-LED-Roku-Smart-Television-HDR-100012585_172c1aa5-8186-46a0-a036-7d037b18fec4.2dc5ae54b0065effaf09a9dc06a578a6.jpeg"
+          style="width: 600px; height: 550px"
+        />
+        <div style="padding: 10px">
+          <p style="font-size: 20px">Onn Smart TV</p>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-top: 5px;
+            "
+          >
+            <p style="font-size: 20px; display: inline-flex">$499</p>
+            <p style="font-size: 15px; color: gray; display: inline-flex">
+              In stock . Free shipping
+            </p>
+          </div>
         </div>
-        </div>
-</body>
+      </div>
+    </div>
+  </body>
 </html>

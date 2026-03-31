@@ -114,10 +114,10 @@
         <h5>MINIMAL STORE</h5>
       </div>
       <div style="display: flex; gap: 20px">
-        <h4 style="font-size: 20px;">Home</h4>
-        <h4 style="font-size: 20px;">Shop</h4>
-        <h4 style="font-size: 20px;">About</h4>
-        <h4 style="font-size: 20px;">Contact</h4>
+        <h4 style="font-size: 20px">Home</h4>
+        <h4 style="font-size: 20px">Shop</h4>
+        <h4 style="font-size: 20px">About</h4>
+        <h4 style="font-size: 20px">Contact</h4>
       </div>
 
       <div style="display: flex; gap: 5px; padding-right: 100px">
@@ -228,66 +228,80 @@
 
     <div class="products">
       <h1 style="font-size: 40px">Products</h1>
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-      <p style="font-size: 20px; color: gray">
-        A fixed list of items for now. Later, this can be powered by API and
-        JavaScript
-      </p>
-      <div style="display: flex; gap: 20px; margin-top: 20px">
-        <button class="productbuttons">All</button>
-        <button class="productbuttons">Clothing</button>
-        <button class="productbuttons">Electronics</button>
-        <button class="productbuttons">Home</button>
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        "
+      >
+        <p style="font-size: 20px; color: gray">
+          A fixed list of items for now. Later, this can be powered by API and
+          JavaScript
+        </p>
+        <div style="display: flex; gap: 20px; margin-top: 20px">
+          <button class="productbuttons">All</button>
+          <button class="productbuttons">Clothing</button>
+          <button class="productbuttons">Electronics</button>
+          <button class="productbuttons">Home</button>
+        </div>
       </div>
-      </div>
-      
+
       <div id="productContainer"></div>
     </div>
-    
+
     <div class="footer">
       <h3
-          style="
+        style="
           width: 80px;
-            text-align: center;
-            border-radius: 15px;
-            border: 1px 1px solid white;
-            padding: 4px;
-            background-color: aliceblue;
-            color: dodgerblue;
-            margin-bottom: 5px;
-          "
+          text-align: center;
+          border-radius: 15px;
+          border: 1px 1px solid white;
+          padding: 4px;
+          background-color: aliceblue;
+          color: dodgerblue;
+          margin-bottom: 5px;
+        "
+      >
+        SHOP
+      </h3>
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        "
+      >
+        <p style="font-size: 17px; color: aliceblue">
+          Simple layout now, ready to grow into a full-featured e-commerce site.
+        </p>
+        <div
+          style="display: flex; gap: 20px; margin-top: 20px; margin-right: 50px"
         >
-          SHOP
-        </h3>
-        <div style="display: flex; justify-content: space-between; align-items: center;">
-        <p style="font-size: 17px; color: aliceblue;">Simple layout now, ready to grow into a full-featured e-commerce site.</p>
-        <div style="display: flex; gap: 20px; margin-top: 20px; margin-right: 50px;">
-        
-      <div style="display: flex; flex-direction: column; gap: 8px;">
-        <p style="font-size: 20px; color: aliceblue;">Shop</p>
-        <p>All products</p>
-        <p>New Arrivals</p>
-        <p>Gift Cards</p>
-      </div>
+          <div style="display: flex; flex-direction: column; gap: 8px">
+            <p style="font-size: 20px; color: aliceblue">Shop</p>
+            <p>All products</p>
+            <p>New Arrivals</p>
+            <p>Gift Cards</p>
+          </div>
 
-      <div style="display: flex; flex-direction: column; gap: 8px;">
-        <p style="font-size: 20px; color: aliceblue;">Company</p>
-        <p>About Us</p>
-        <p>Blog</p>
-        <p>Careers</p>
-      </div>
+          <div style="display: flex; flex-direction: column; gap: 8px">
+            <p style="font-size: 20px; color: aliceblue">Company</p>
+            <p>About Us</p>
+            <p>Blog</p>
+            <p>Careers</p>
+          </div>
 
-      <div style="display: flex; flex-direction: column; gap: 8px;">
-        <p style="font-size: 20px; color: aliceblue;">Support</p>
-        <p>Help Center</p>
-        <p>Shipping</p>
-        <p>Returns</p>
-      </div>
-
-        </div>
+          <div style="display: flex; flex-direction: column; gap: 8px">
+            <p style="font-size: 20px; color: aliceblue">Support</p>
+            <p>Help Center</p>
+            <p>Shipping</p>
+            <p>Returns</p>
+          </div>
         </div>
       </div>
+    </div>
 
-      <script type="module" src= "webstore.js"></script>
+    <script type="module" src="webstore.js"></script>
   </body>
 </html>

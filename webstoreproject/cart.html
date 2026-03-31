@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart - Lesson Demo</title>
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="page-title">Your Cart</h1>
+
+      <div class="cart-layout">
+        <section class="card"></section>
+
+        <article class="cart-item">
+          <div class="item-image"></div>
+          <h2 class="item-name">{{cartItem.name}}</h2>
+          <p class="item-meta">Qty: {{cartItem.quantity}}</p>
+          <p class="item-price">${{cartItem.price}}</p>
+        </article>
+
+        <aside class="card">
+          <h2 class="summary-title">Order Summary</h2>
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <span>$186.00</span>
+          </div>
+          <div class="summary-row">
+            <span>Shipping</span>
+            <span>$10.00</span>
+          </div>
+          <div class="summary-row summary-total">
+            <span>Total</span>
+            <span>$196.00</span>
+          </div>
+          <button class="checkout-btn" type="button">
+            Proceed to Checkout
+          </button>
+        </aside>
+      </div>
+    </div>
+    <script src="cart.js"></script>
+  </body>
+</html>

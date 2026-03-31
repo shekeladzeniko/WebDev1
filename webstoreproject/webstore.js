@@ -1,6 +1,6 @@
 import { productinfo } from "./data.js";
 
-const productcontainer  = document.querySelector('#productContainer');
+const productcontainer = document.querySelector("#productContainer");
 
 for (let i = 0; i < productinfo.length; i++) {
   productcontainer.innerHTML += `
@@ -21,5 +21,3 @@ for (let i = 0; i < productinfo.length; i++) {
     </div>
   `;
 }
-
-

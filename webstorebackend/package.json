@@ -1,0 +1,27 @@
+{
+  "name": "webdev1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shekeladzeniko/WebDev1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shekeladzeniko/WebDev1/issues"
+  },
+  "homepage": "https://github.com/shekeladzeniko/WebDev1#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "json": "^11.0.0",
+    "nodemon": "^3.1.14"
+  }
+}

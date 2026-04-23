@@ -9,7 +9,16 @@ app.get("/users", (req, res) => {
 });
 
 app.get("/users/:id", (req, res) => {
-      res.send(users[req.params.id]);
+      console.log(req.params.id);
+      const parsedid = parseInt(req.params.id);
+
+      if(isNaN(parsedid)){
+            return res.status(400).send("value should be number");
+      }else if(parsedid >= users.length){
+            return res.status(400).send("value should be smaller");
+      }
+
+      res.status(200).send(users[parsedid]);
 });
 
 app.listen(3000,() => {

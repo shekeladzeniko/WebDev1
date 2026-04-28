@@ -5,7 +5,7 @@ const app = express();
 const users = ["saba", "niko", "gio", "luka"];
 
 app.get("/users", (req, res) => {
-      req.send(users);
+      res.send(users);
 });
 
 app.get("/users/:id", (req, res) => {
@@ -19,6 +19,11 @@ app.get("/users/:id", (req, res) => {
       }
 
       res.status(200).send(users[parsedid]);
+});
+
+app.post("/users", (req, res) => {
+      console.log(req.body);
+      res.send("welcome to the post method");
 });
 
 app.listen(3000,() => {

@@ -11,11 +11,20 @@ const products = [
       {id: 4, name: "camera", price: 40},
 ]
 
+const videos = ["video1", "video2", "video3"];
+
+app.get("/videos/:id", (req, res) => {
+      console.log(req.params.id);
+      const parsedid = parseInt(req.params.id);
+      res.status(200).send(videos[parsedid]);
+})
 
 
 app.get("/users", (req, res) => {
       res.send(users);
 });
+
+
 
 app.get("/users/:id", (req, res) => {
       console.log(req.params.id);

@@ -1,15 +1,21 @@
 import express from "express";
 
 const app = express();
+app.use(express.json());
 
-const users = ["saba", "niko", "gio", "luka"];
+const users = [
+      {name: "niko", password: "niko123"},
+      {name: "gio",  password: "gio123"},
+      {name: "luka", password: "luka123"},
+      {name: "deme", password: "deme123"},
+];
 
 const products = [
       {id: 1, name: "mouse", price: 30},
       {id: 2, name: "keyboard", price: 50},
       {id: 3, name: "monitor", price: 100},
       {id: 4, name: "camera", price: 40},
-]
+];
 
 
 
@@ -52,6 +58,29 @@ app.get("/products/:id", (req, res) => {
       }
 
       res.status(200).send(products[parsedid]);
+})
+
+
+app.post("/addproduct", (req, res) => {
+      const newproduct = req.body;
+      newproduct.id = products.length + 1;
+      products.push(newproduct);
+
+      return res.status(201).send("Product added");
+})
+
+app.post("/login", (req, res) => {
+      const founduser = users.find((user) => {
+    return (
+      user.name === req.body.name && user.password === req.body.password
+    );
+  });
+
+  if (!founduser) {
+    return res.status(401).send("user doesn't exist");
+  }
+
+  return res.status(200).send("you are logged in");
 })
 
 

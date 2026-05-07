@@ -45,11 +45,6 @@ app.get("/users/:id", (req, res) => {
       res.status(200).send(users[parsedid]);
 });
 
-app.post("/users", (req, res) => {
-      console.log(req.body);
-      res.send("welcome to the post method");
-});
-
 
 
 app.get("/products", (req, res) => {
@@ -80,7 +75,7 @@ app.post("/addproduct", (req, res) => {
 
 app.post("/login", (req, res) => {
       const founduser = users.find((user) => {
-    return (
+      return (
       user.name === req.body.name && user.password === req.body.password
     );
   });
@@ -95,5 +90,5 @@ app.post("/login", (req, res) => {
 
 
 app.listen(3000,() => {
-      console.log('app is listening ar http://localhost:3000');
+      console.log('app is listening at http://localhost:3000');
 });

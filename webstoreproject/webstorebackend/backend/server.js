@@ -37,21 +37,6 @@ app.post("/addproduct", (req, res) => {
       return res.status(201).send("Product added");
 })
 
-app.post("/login", (req, res) => {
-      const founduser = users.find((user) => {
-    return (
-      user.name === req.body.name && user.password === req.body.password
-    );
-  });
-
-  if (!founduser) {
-    return res.status(401).send("user doesn't exist");
-  }
-
-  return res.status(200).send("you are logged in");
-})
-
-
 
 app.listen(3000,() => {
       console.log('app is listening ar http://localhost:3000');

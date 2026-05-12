@@ -21,11 +21,15 @@ app.get("/products/:id", (req, res) => {
 
       if(isNaN(parsedid)){
             return res.status(400).send("value should be number");
-      }else if(parsedid >= products.length){
-            return res.status(400).send("value should be smaller");
       }
 
-      res.status(200).send(products[parsedid]);
+      const product = products.find((product) => product.id === parsedid);
+      
+      if(!product){
+            return res.status(404).send("this product doesn't exist");
+      }
+
+      res.status(200).send(product);
 })
 
 

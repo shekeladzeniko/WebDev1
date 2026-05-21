@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Supplements Store</title>
+
+<style>
+:root {
+  --blue: dodgerblue;
+  --bg: #f6f9ff;
+  --text: #1a1a1a;
+  --gray: #6b7280;
+  --card: white;
+  --radius: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  width: min(1200px, 90%);
+  margin: auto;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background: var(--blue);
+  color: white;
+  padding: 18px 0;
+}
+
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h3 {
+  background: white;
+  color: var(--blue);
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  font-size: 16px;
+}
+
+.nav-actions button {
+  background: white;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* ===== HERO ===== */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.badge {
+  display: inline-block;
+  border: 2px solid var(--blue);
+  color: var(--blue);
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  color: var(--gray);
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.btn-group {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background: var(--blue);
+  color: white;
+}
+
+.btn-outline {
+  background: white;
+  border: 2px solid var(--blue);
+  color: var(--blue);
+}
+
+/* ===== HERO PRODUCT CARD ===== */
+.product-card {
+  background: white;
+  border-radius: var(--radius);
+  padding: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* ===== PRODUCTS ===== */
+.section-title {
+  font-size: 32px;
+  margin: 40px 0 10px;
+}
+
+.section-sub {
+  color: var(--gray);
+  margin-bottom: 20px;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  padding: 8px 14px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+}
+
+#productContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.item {
+  background: white;
+  border-radius: var(--radius);
+  padding: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  transition: 0.2s;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+}
+
+.item img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: var(--blue);
+  color: white;
+  margin-top: 60px;
+  padding: 40px 0;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="container navbar-inner">
+
+    <div class="logo">
+      <h3>Supplements</h3>
+    </div>
+
+    <div class="nav-links">
+      <p>Home</p>
+      <p>Shop</p>
+      <p>About</p>
+      <p>Contact</p>
+    </div>
+
+    <div class="nav-actions">
+      <button>🔍</button>
+      <button>🛒</button>
+    </div>
+
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="container hero">
+
+  <div>
+    <span class="badge">New Products</span>
+    <h1>Food Supplements for Muscle & Health</h1>
+    <p>
+      Clean modern supplements store UI. Ready for API integration and real products.
+    </p>
+
+    <div class="btn-group">
+      <button class="btn btn-primary">Browse Products</button>
+      <button class="btn btn-outline">Learn More</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="https://m.media-amazon.com/images/I/711Lq+gNUtL._AC_UF1000,1000_QL80_.jpg"/>
+    <h4 style="margin-top:10px;">Whey Protein</h4>
+    <p style="color:gray; font-size:14px;">High quality protein for muscle growth</p>
+  </div>
+
+</div>
+
+<!-- PRODUCTS -->
+<div class="container">
+
+  <h2 class="section-title">Products</h2>
+  <p class="section-sub">Browse supplements by category</p>
+
+  <div class="filters">
+    <button class="filter-btn">All</button>
+    <button class="filter-btn">Protein</button>
+    <button class="filter-btn">Creatine</button>
+    <button class="filter-btn">Vitamins</button>
+    <button class="filter-btn">Minerals</button>
+  </div>
+
+  <div id="productContainer"></div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="container footer-inner">
+
+    <div>
+      <h3>Supplements.com</h3>
+      <p style="margin-top:10px; color:#dbeafe;">
+        Modern supplement store UI built for scalability.
+      </p>
+    </div>
+
+    <div>
+      <h4>Shop</h4>
+      <p>All products</p>
+      <p>New Arrivals</p>
+      <p>Gift Cards</p>
+    </div>
+
+    <div>
+      <h4>Company</h4>
+      <p>About</p>
+      <p>Blog</p>
+      <p>Careers</p>
+    </div>
+
+    <div>
+      <h4>Support</h4>
+      <p>Help Center</p>
+      <p>Shipping</p>
+      <p>Returns</p>
+    </div>
+
+  </div>
+</div>
+
+<script type="module" src="webstore.js"></script>
+</body>
+</html>

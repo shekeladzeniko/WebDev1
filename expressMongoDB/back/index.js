@@ -4,12 +4,19 @@ import cors from "cors";
 import "./db.js";
 import {User} from "./models/users.js";
 import {Product} from "./models/products.js";
-import userRoute from "./routes/userRoute.js"
-import productRoute from "./routes/productRoute.js"
+import userRoute from "./routes/userRoute.js";
+import productRoute from "./routes/productRoute.js";
+import logger from "./middlewares/logger.js";
+import authRoute from "./routes/authRoute.js";
 
 const app = express();
 
 app.use(cors());
+app.use(express.json());
+
+app.use("/auth", authRoute);
+app.use("/users", logger ,userRoute);
+app.use("/products", logger, productRoute);
 
 
 app.post("/addUser", (req, res) => {
@@ -21,7 +28,7 @@ app.post("/addUser", (req, res) => {
       user.save();
 
       res.send("success");
-})
+});
 
 app.post("/addProduct", async (req, res) => {
 
@@ -41,7 +48,7 @@ app.post("/addProduct", async (req, res) => {
 
 
       res.send("success");
-})
+});
 
 app.listen(3000, () => {
       console.log("listening ar http://localhost:3000");

@@ -20,4 +20,17 @@ router.post('/login', (req, res) => {
       res.json({token});
 });
 
+router.post("/register", (req, res) =>{
+      const {username, password, displayName, role} = req.body;
+
+      try{
+            const user = new User({ username, password, displayName, role});
+            await user.save();
+
+            res.status(201).send("user added successfully")
+      } catch(error){
+            res.status(400).send("database error" + error.message);
+      }
+});
+
 export default router;

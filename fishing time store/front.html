@@ -18,6 +18,7 @@
         </div>
 
         <div class="search-container">
+            <span class="search-icon">🔍︎</span>
             <input
                 type="text"
                 placeholder="მოძებნე ანკესი, კოჭა, ძუა, სატყუარა..."
@@ -33,47 +34,52 @@
 
     <div class="category-navbar">
         <a href="#">მთავარი</a>
-        <a href="#">ანკესი</a>
-        <a href="#">კოჭა</a>
-        <a href="#">სატყუარა</a>
-        <a href="#">ნემსკავი</a>
-        <a href="#">ძუა</a>
-        <a href="#">სხვა</a>
+        <a href="#">პროდუქცია</a>
+        <a href="#">ჩვენს შესახებ</a>
     </div>
 
 </header>
 
-    <section class="hero">
-        <h2>ყველაფერი თევზაობისთვის</h2>
-    <p>ფართო ასორტიმენტი საუკეთესო ფასად</p>
-    <button>პროდუქცია</button>
-    </section>
+    <section class="main-showcase">
 
-    <section class="categories">
-        <h2>Our Products</h2>
+    <aside class="product-sidebar">
+        <h3>Shop Categories</h3>
 
-        <div class="cards">
-            <div class="card">
-                <h3>🎣 Fishing Rods</h3>
-                <p>High-quality rods for every fishing style.</p>
-            </div>
+        <a href="#">ანკესი</a>
+        <a href="#">კოჭა</a>
+        <a href="#">ნემსკავი</a>
+        <a href="#">სატყუარა</a>
+        <a href="#">ძუა</a>
+        <a href="#">სიმძიმეები</a>
+        <a href="#">აქსესუარები</a>
+    </aside>
 
-            <div class="card">
-                <h3>🪝 Hooks & Tackle</h3>
-                <p>Strong hooks and terminal tackle.</p>
-            </div>
+    
+    
+    <section class="hero-slider">
 
-            <div class="card">
-                <h3>🐠 Lures</h3>
-                <p>Artificial lures for all species.</p>
-            </div>
+    <button class="hero-arrow left" onclick="prevSlide()">❮</button>
 
-            <div class="card">
-                <h3>⚙️ Reels</h3>
-                <p>Spinning, baitcasting and feeder reels.</p>
-            </div>
+    <div class="hero-slide active" style="background-image: url('images/2.jpg');">
+        <div class="hero-content">
         </div>
-    </section>
+    </div>
+
+    <div class="hero-slide" style="background-image: url('images/1.jpg');">
+        <div class="hero-content">
+        </div>
+    </div>
+
+    <div class="hero-slide" style="background-image: url('images/hero3.jpg');">
+        <div class="hero-content">
+        </div>
+    </div>
+
+    <button class="hero-arrow right" onclick="nextSlide()">❯</button>
+
+</section>
+
+</section>
 
     <section class="reviews">
         <h2>Customer Reviews</h2>

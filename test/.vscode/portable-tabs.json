@@ -1,0 +1,35 @@
+{
+  "version": 3,
+  "savedAt": "2026-10-12T15:57:47.258Z",
+  "groups": [
+    {
+      "viewColumn": 1,
+      "tabs": [
+        {
+          "path": "script.js",
+          "pinned": false,
+          "preview": false,
+          "selection": {
+            "start": {
+              "line": 14,
+              "character": 27
+            },
+            "end": {
+              "line": 14,
+              "character": 27
+            }
+          }
+        },
+        {
+          "path": "index.html",
+          "pinned": false,
+          "preview": true
+        }
+      ]
+    }
+  ],
+  "active": {
+    "path": "script.js",
+    "viewColumn": 1
+  }
+}

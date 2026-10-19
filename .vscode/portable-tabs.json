@@ -1,35 +1,41 @@
 {
   "version": 3,
-  "savedAt": "2026-10-12T15:09:16.217Z",
+  "savedAt": "2026-10-19T15:55:41.372Z",
   "groups": [
     {
       "viewColumn": 1,
       "tabs": [
         {
-          "path": "test/script.js",
+          "path": "react/react-app/src/App.jsx",
           "pinned": false,
-          "preview": false,
-          "selection": {
-            "start": {
-              "line": 7,
-              "character": 0
-            },
-            "end": {
-              "line": 7,
-              "character": 0
-            }
-          }
+          "preview": false
         },
         {
-          "path": "test/index.html",
+          "path": "react/react-app/src/components/main-content.jsx",
+          "pinned": false,
+          "preview": false
+        },
+        {
+          "path": "react/react-app/src/components/navbar.jsx",
+          "pinned": false,
+          "preview": false
+        },
+        {
+          "path": "react/react-app/src/components/footer.jsx",
+          "pinned": false,
+          "preview": false
+        },
+        {
+          "path": "react/react-app/src/main.jsx",
           "pinned": false,
           "preview": false
         }
       ]
+    },
+    {
+      "viewColumn": 2,
+      "tabs": []
     }
   ],
-  "active": {
-    "path": "test/script.js",
-    "viewColumn": 1
-  }
+  "active": null
 }

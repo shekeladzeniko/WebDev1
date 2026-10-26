@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunny Side Cafe</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #fbf5ec;
+        color: #3d2b1f;
+      }
+
+      /* ===== NAVBAR ===== */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+        background-color: #7b4b32;
+        color: white;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 24px;
+        list-style: none;
+      }
+
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      /* ===== HERO ===== */
+      .hero {
+        text-align: center;
+        padding: 80px 20px;
+        background-color: #f4dfc8;
+      }
+
+      .hero h1 {
+        font-size: 44px;
+        margin-bottom: 16px;
+      }
+
+      .hero p {
+        font-size: 18px;
+        color: #765442;
+        margin-bottom: 30px;
+      }
+
+      .button {
+        background-color: #a45e35;
+        color: white;
+        border: none;
+        padding: 14px 30px;
+        font-size: 16px;
+        border-radius: 30px;
+        cursor: pointer;
+      }
+
+      /* ===== MENU ===== */
+      .menu {
+        padding: 40px;
+        text-align: center;
+      }
+
+      .menu h2 {
+        font-size: 32px;
+        margin-bottom: 30px;
+      }
+
+      .card-list {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        flex-wrap: wrap;
+      }
+
+      .card {
+        background-color: white;
+        width: 260px;
+        border-radius: 16px;
+        padding: 24px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .card-emoji {
+        font-size: 64px;
+        margin-bottom: 12px;
+      }
+
+      .card h3 {
+        font-size: 22px;
+        margin-bottom: 8px;
+      }
+
+      .card p {
+        color: #765442;
+        margin-bottom: 16px;
+      }
+
+      .price {
+        font-size: 20px;
+        font-weight: bold;
+        color: #a45e35;
+        margin-bottom: 16px;
+      }
+
+      /* ===== FOOTER ===== */
+      .footer {
+        text-align: center;
+        padding: 30px;
+        margin-top: 60px;
+        background-color: #3d2b1f;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="logo">☕ Sunny Side</div>
+
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1>Your Daily Dose of Happiness</h1>
+      <p>Fresh coffee, delicious treats, and cozy moments.</p>
+      <button class="button">Explore Our Menu</button>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu">
+      <h2>Our Favorites</h2>
+
+      <div class="card-list">
+        <div class="card">
+          <div class="card-emoji">☕</div>
+          <h3>Classic Latte</h3>
+          <p>Smooth and creamy coffee made with fresh milk.</p>
+          <div class="price">$4.50</div>
+          <button class="button">Order Now</button>
+        </div>
+
+        <div class="card">
+          <div class="card-emoji">🥐</div>
+          <h3>Fresh Croissant</h3>
+          <p>A golden, buttery pastry baked fresh every morning.</p>
+          <div class="price">$3.00</div>
+          <button class="button">Order Now</button>
+        </div>
+
+        <div class="card">
+          <div class="card-emoji">🍰</div>
+          <h3>Chocolate Cake</h3>
+          <p>A rich chocolate dessert for your afternoon break.</p>
+          <div class="price">$5.00</div>
+          <button class="button">Order Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>© 2026 Sunny Side Cafe. Made with ❤️</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

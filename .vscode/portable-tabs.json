@@ -1,11 +1,30 @@
 {
   "version": 3,
-  "savedAt": "2026-10-26T14:45:26.768Z",
+  "savedAt": "2026-11-02T15:46:57.426Z",
   "groups": [
     {
       "viewColumn": 1,
-      "tabs": []
+      "tabs": [
+        {
+          "path": "react/reactApp/src/App.jsx",
+          "pinned": false,
+          "preview": true,
+          "selection": {
+            "start": {
+              "line": 0,
+              "character": 0
+            },
+            "end": {
+              "line": 0,
+              "character": 0
+            }
+          }
+        }
+      ]
     }
   ],
-  "active": null
+  "active": {
+    "path": "react/reactApp/src/App.jsx",
+    "viewColumn": 1
+  }
 }
